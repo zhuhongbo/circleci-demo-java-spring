@@ -3,7 +3,7 @@
 This is an example application showcasing how to run a Java app on CircleCI 2.0.
  
 This application uses the following tools: 
-
+ 
 * Maven 
 * Java 8 
 * PostgreSQL 
