@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @ContextConfiguration
 @TestPropertySource("/test.properties")
 public class DemoJavaSpringApplicationTests {
-
+  
 	@Test
 	public void contextLoads() {
 	}
