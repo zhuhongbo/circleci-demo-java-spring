@@ -38,7 +38,13 @@ jobs:
       - image: circleci/openjdk:8-jdk-browsers
     steps:
       - checkout
-      - run: echo "hello"
+      - run: echo "test1"
+  test2:
+    docker:
+      - image: circleci/openjdk:8-jdk-browsers
+    steps:
+      - checkout
+      - run: echo "test2"
 
 workflows:
   version: 2
@@ -46,4 +52,8 @@ workflows:
     jobs:
       - build
       - test
+      - test2:
+          requires: 
+            - test
+            - build
       
