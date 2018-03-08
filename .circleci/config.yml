@@ -56,4 +56,11 @@ workflows:
           requires: 
             - test
             - build
-      
+  build_and_test_2:
+    jobs:
+      - build
+      - test
+      - test2:
+          requires: 
+            - test
+    
